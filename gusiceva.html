@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="SemiColonWeb" />
+
+	<!-- Stylesheets
+	============================================= -->
+	<link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="css/swiper.css" type="text/css" />
+	<link rel="stylesheet" href="css/dark.css" type="text/css" />
+
+	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+
+	<link rel="stylesheet" href="css/custom.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<!-- Store Demo Specific Stylesheet -->
+	<link rel="stylesheet" href="css/colors.php?color=222222" type="text/css" /> <!-- Store Theme Color -->
+	<link rel="stylesheet" href="demos/store/css/fonts.css" type="text/css" /> <!-- Store Theme Font -->
+	<link rel="stylesheet" href="demos/store/store.css" type="text/css" /> <!-- Store Theme Custom CSS -->
+	<!-- / -->
+
+	<!-- Document Title
+	============================================= -->
+	<title>Imperial - Ponuda stanova</title>
+
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QF4H2YSQC6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QF4H2YSQC6');
+</script>
+<body class="stretched modal-subscribe-bottom">
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix" style="overflow-x: hidden;">
+
+			<!-- Modal -->
+			<div class="modal animated fadeInUp fast pe-0" id="modal-subscribe" role="dialog" displayed="false" data-backdrop="static">
+
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<button type="button" class="btn btn-close btn-sm ms-auto p-2"  data-bs-dismiss="modal" aria-label="Close" aria-label="Close"></button>
+						<div class="modal-body">
+	
+							<div class="form-widget mx-auto" data-loader="button" style="padding: 30px">
+	
+								<h2 class="fw-bold h1 mb-3" style="letter-spacing: -2px">Prijavi se za katalog!</h2>
+								<p>Unesite svoju email adresu i ubrzo vam saljemo katalog sa najboljom ponudom</p>
+	
+								<div class="form-result"></div>
+	
+								<form class="mb-0" id="modal-subscribe-form" action="include/form.php" method="post" enctype="multipart/form-data">
+									<label for="modal-subscribe-form-email">Email adresa <span>*</span></label>
+									<input type="email" name="modal-subscribe-form-email" id="modal-subscribe-form-email" class="form-control required rounded-0" placeholder="email@adresa.com">
+	
+									<input class="d-none" type="text" id="modal-subscribe-form-botcheck" name="modal-subscribe-form-botcheck" value="" />
+									<button name="modal-subscribe-form-submit" class="button w-100 btn-danger m-0 mt-2" type="submit">Preuzmi katalog</button>
+	
+									<input type="hidden" name="prefix" value="modal-subscribe-form-">
+								</form>
+								<div class="text-center">
+									<small class="text-black-50 mt-1"><em>Katalog sadrzi trunutnu najbolju ponudu stanova u Kragujevcu</em></small>
+								</div>
+	
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+			<!-- Header
+			============================================= -->
+			<header id="header" class="transparent-header floating-header header-size-custom" data-mobile-sticky="true" data-sticky-shrink="false" data-sticky-class="not-dark">
+				<div id="header-wrap">
+					<div class="container-fluid">
+						<div class="header-row justify-content-lg-between">
+	
+							<!-- Logo
+							============================================= -->
+							<div id="logo" class="me-lg-0">
+								<a href="index.html" class="standard-logo" data-dark-logo="demos/store/images/logo-dark.png"><img src="demos/store/images/logo.png" alt="Canvas Logo"></a>
+								<a href="index.html" class="retina-logo" data-dark-logo="demos/store/images/logo-dark@2x.png"><img src="demos/store/images/logo@2x.png" alt="Canvas Logo"></a>
+							</div><!-- #logo end -->
+	
+							<div class="header-misc">
+	
+								<!-- Top Login
+								============================================= -->
+								<div id="top-account" class="px-4">
+									<a href="#modal-register" data-lightbox="inline">Agent online</a>
+								</div><!-- #top-search end -->
+	
+								<!-- Top Cart
+								============================================= -->
+								<!-- #top-cart end -->
+							</div>
+	
+							<div id="primary-menu-trigger">
+								<svg class="svg-trigger" viewBox="0 0 100 100"><path d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"></path><path d="m 30,50 h 40"></path><path d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"></path></svg>
+							</div>
+	
+							<!-- Primary Navigation
+							============================================= -->
+							<nav class="primary-menu with-arrows">
+
+								<!-- Menu Left -->
+								<ul class="not-dark menu-container">
+									<li class="menu-item current"><a class="menu-link" href="index.html"><div>Početna</div></a></li>
+									<li class="menu-item mega-menu"><a class="menu-link "  href="#"><div>Novogradnja</div></a>
+										<div class="mega-menu-content mega-menu-style-2">
+											<div class="container">
+												<div class="row">
+													<ul class="mega-menu-column sub-menu-container border-start-0 col-lg-3">
+														<li class="mega-menu-title menu-item"><a class="menu-link" href="#"><div>Tesla Palace</div></a>
+															<ul class="sub-menu-container">
+																<li class="menu-item"><a class="menu-link" href="tesla-palace-garsonjere.html"><div>Garsonjere</div></a></li>
+																<li class="menu-item"><a class="menu-link" href="tesla-palace-jednosobni.html"><div>Jednosobni</div></a></li>
+																<li class="menu-item"><a class="menu-link" href="tesla-palace-dvosobni.html"><div>Dvosobni</div></a></li>
+																<li class="menu-item"><a class="menu-link" href="tesla-palace-trosobni.html"><div>Trosobni</div></a></li>
+																<li class="menu-item"><a class="menu-link" href="tesla-palace-cetvorosobni.html"><div>Četvorosobni</div></a></li>
+																<li class="menu-item"><a class="menu-link" href="#"><div>Lokali</div></a></li>
+															
+															</ul>
+														</li>
+														 
+													</ul>
+												
+													<ul class="mega-menu-column sub-menu-container border-start-0 col-lg-3">
+														<li class="mega-menu-title menu-item"><a class="menu-link" href="#"><div>Beavers Group</div></a>
+															<ul class="sub-menu-container">
+																<li class="menu-item"><a class="menu-link" href="beavers-garsonjere.html"><div>Garsonjere</div></a></li>
+																<li class="menu-item"><a class="menu-link" href="beavers-jednosobni.html"><div>Jednosobni</div></a></li>
+																<li class="menu-item"><a class="menu-link" href="beavers-dvosobni.html"><div>Dvosobni</div></a></li>
+																<li class="menu-item"><a class="menu-link" href="beavers-trosobni.html"><div>Trosobni</div></a></li>
+															</ul>
+														</li>
+														
+													</ul>
+													<ul class="mega-menu-column sub-menu-container border-start-0 col-lg-3">
+														
+														<li class="mega-menu-title menu-item"><a class="menu-link" href="#"><div>Bosanska Kragujevac</div></a>
+															<ul class="sub-menu-container">
+																<li class="menu-item"><a class="menu-link" href="bosanska-jednosobni.html"><div>Jednosobni</div></a></li>
+																<li class="menu-item"><a class="menu-link" href="bosanska-dvosobni.html"><div>Dvosobni</div></a></li>
+																<li class="menu-item"><a class="menu-link" href="bosanska-trosobni.html"><div>Trosobni</div></a></li>
+															</ul>
+														</li>
+													</ul>
+													<ul class="mega-menu-column sub-menu-container border-start-0 col-lg-3">
+														
+														<li class="mega-menu-title menu-item"><a class="menu-link" href="#"><div>Family House</div></a>
+															<ul class="sub-menu-container">
+																<li class="menu-item"><a class="menu-link" href="family-house-jednosobni.html"><div>Jednosobni</div></a></li>
+																<li class="menu-item"><a class="menu-link" href="family-house-dvosobni.html"><div>Dvosobni</div></a></li>
+																<li class="menu-item"><a class="menu-link" href="family-house-trosobni.html"><div>Trosobni</div></a></li>
+															</ul>
+														</li>
+													</ul>
+													<!-- <ul class="mega-menu-column sub-menu-container col-lg-3 border-start-0">
+														<li class="card p-0 bg-transparent border-0">
+															<img class="card-img-top" src="demos/store/images/cat/1.jpg" alt="image cap">
+															<a href="#" class="btn btn-link text-start fw-medium ps-0 bg-transparent"><u>POGLEDAJ PONUDU</u></a>
+														</li>
+													</ul> -->
+												</div>
+											</div>
+										</div>
+									</li><!-- .mega-menu end -->
+									<li class="menu-item"><a class="menu-link " href="#"><div>Starogradnja</div></a></li>
+									<li class="menu-item mega-menu"><a class="menu-link" href="#"><div>Pitanja i pomoć</div></a>
+										<div class="mega-menu-content mega-menu-style-2">
+											<div class="container">
+												<div class="row">
+													<ul class="mega-menu-column sub-menu-container col-lg-4 border-start-0">
+														<li class="mega-menu-title menu-item"><a class="menu-link" href="#"><div>Kontakt informacije</div></a>
+															<ul class="sub-menu-container">
+																<li class="menu-item">
+																	<div class="widget">
+																		<address>
+																			<strong>Srbija:</strong><br>
+																			Miloja Pavlovića 10<br>
+																			Kragujevac, 34000<br>
+																		</address>
+																		<abbr title="Phone Number"><strong>Tel 1:</strong></abbr> (+381) 64 406 0000<br>
+																		<abbr title="Fax"><strong>Tel 2:</strong></abbr> (+381) 65 39 03 402<br>
+																		<abbr title="Email Address"><strong>Email:</strong></abbr> info@imperial.co.rs
+																	</div>
+																</li>
+															</ul>
+														</li>
+													</ul>
+													<ul class="mega-menu-column sub-menu-container col-lg-4 border-start-0">
+														<li class="mega-menu-title menu-item"><a class="menu-link" href="#"><div>Naš tim</div></a>
+															<ul class="sub-menu-container">
+																<li class="menu-item"><a class="menu-link" href="#"><div>Branislav Šoškić</div></a></li>
+																<li class="menu-item"><a class="menu-link" href="#"><div>Sandra Popović</div></a></li>
+																<li class="menu-item"><a class="menu-link" href="#"><div>Ana Nedeljković</div></a></li>
+																<li class="menu-item"><a class="menu-link" href="#"><div>Anđela Nedeljković Vasić</div></a></li>
+																<li class="menu-item"><a class="menu-link" href="#"><div>
+																	Dragan Lazarević Laza - Advokat</div></a></li>
+																<li class="menu-item"><a class="menu-link" href="#"><div>Sladjana Živadinović - Advokat</div></a></li>
+															
+															</ul>
+														</li>
+													</ul>
+													<ul class="mega-menu-column sub-menu-container col-lg-4 border-start-0">
+														<li class="mega-menu-title menu-item"><a class="menu-link" href="#"><div>Česta pitanja</div></a>
+															<ul class="sub-menu-container">
+																<li class="menu-item"><a class="menu-link" href="#"><div>Q. Kupovina u ranoj izgradnji?</div></a></li>
+																<li class="menu-item"><a class="menu-link" href="#"><div>Q. Najbolja lokacija?</div></a></li>
+																<li class="menu-item"><a class="menu-link" href="#"><div>Q. Kupovina pomoću kredita banke?</div></a></li>
+																<li class="menu-item"><a class="menu-link" href="#"><div>Q. Lokali i poslovni prostori?</div></a></li>
+																<li class="menu-item"><a class="menu-link" href="#"><div>Q. Prodaja starogradnje?</div></a></li>
+															</ul>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</li><!-- .mega-menu end -->
+									<li class="menu-item"><a class="menu-link" href="#"><div>Kontakt</div></a></li>
+								</ul>
+	
+							</nav><!-- #primary-menu end -->
+	
+						</div>
+	
+					</div>
+	
+				</div>
+				<div class="header-wrap-clone"></div>
+	
+			</header><!-- #header end -->
+
+		<!-- Page Title
+		============================================= -->
+		<section id="page-title" class="page-title-parallax page-title-dark page-title-center" style="background-image: linear-gradient(to bottom, rgba(0,0,0,.1), rgba(0,0,0,.6)),  url('slike/gusiceva/11.jpg'); background-size: cover; padding: 170px 0 100px;" data-bottom-top="background-position: 50% 200px;" data-top-bottom="background-position: 50% -200px;">
+
+			<div class="container clearfix">
+				<h1>Milovana Gušića 76</h1>
+				<span>U Kragujevcu - Stanovi površine 28m2 do 83m2</span>
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="#">Početna</a></li>
+					
+					
+					<li class="breadcrumb-item active" aria-current="page">Novogradnja
+			</div>
+
+		</section><!-- #page-title end -->
+
+		<!-- Content
+		============================================= -->
+		<section id="content">
+			<div class="content-wrap pb-0">
+
+				<!-- Login/Register Modal -->
+				<div class="modal-register mfp-hide" id="modal-register">
+					<div class="card mx-auto" style="max-width: 540px;">
+						<div class="card-header py-3 bg-transparent center">
+							<h3 class="mb-0 fw-normal">Dobrodošli u Imperial Nekretnine</h3>
+						</div>
+						<div class="card-body mx-auto py-5" style="max-width: 70%;">
+
+
+							<form id="login-form" name="login-form" class="mb-0 row" action="#" method="post">
+
+								<div class="col-12">
+									<input type="text" id="ime" name="ime" value="" class="form-control not-dark" placeholder="Ime i prezime" />
+								</div>
+
+								<div class="col-12 mt-4">
+									<input type="text" id="pitanje" name="pitanje" value="" class="form-control not-dark" placeholder="Pitanje" />
+								</div>
+								<div class="col-12 text-end">
+									<a href="#" class="text-dark fw-light mt-2">primer - dostupni trosobni stanovi 80m2</a>
+								</div>
+								<div class="col-12 mt-4">
+									<input type="number" id="number" name="number" value="" class="form-control not-dark" placeholder="Broj telefona" />
+								</div>
+
+
+						
+
+								<div class="col-12 mt-4">
+									<button class="button w-100 m-0" id="login-form-submit" name="login-form-submit" value="login">Pošalji upit Agentu</button>
+								</div>
+							</form>
+						</div>
+						<div class="card-footer py-4 center">
+							<p class="mb-0">Pozovite Agenta za više informacija<a href="#"><u>0644060000</u></a></p>
+						</div>
+					</div>
+				</div><!-- Login/Register Modal End -->
+
+				<div class="clear"></div>
+
+				<div class="single-product mb-6">
+					<div class="product">
+						<div class="container-fluid">
+							<div class="row gutter-50">
+								<div class="col-xl-7 col-lg-5 mb-0 ">
+
+									<div class="masonry-thumbs grid-container grid-2" data-lightbox="gallery">
+										<a class="grid-item" href="slike/gusiceva/1.png" data-lightbox="gallery-item"><img src="slike/gusiceva/1.png" alt="Watch 1"></a>
+										<a class="grid-item" href="slike/gusiceva/2.png" data-lightbox="gallery-item"><img src="slike/gusiceva/2.png" alt="Watch 3"></a>
+										
+										 </div>
+
+								</div>
+
+								<div class="col-xl-5 col-lg-7 mb-0">
+
+
+									<div class="line line-sm"></div>
+
+									<div >
+
+										<h3>Jednoiposoban stan 48,09 m2</h3>
+
+										<!-- Product Single - Short Description
+										============================================= -->
+										<p>Jednoiposoban stan idealan za udoban život u prestižnom delu Kragujevca. Ovaj svetli stan nudi praktičan raspored prostorija i blizinu svih potrebnih sadržaja, čineći ga savršenim izborom za udoban gradski život.</p>
+											
+									</div>
+
+									<!-- Product Single - Meta
+									============================================= -->
+									<div class="card product-meta mt-4 mb-5 rounded-0">
+										<div class="card-body">
+											<span itemprop="productID" class="sku_wrapper">Cena po m2: <span class="sku">1500€ + PDV</span></span>
+											</div>
+									</div><!-- Product Single - Meta End -->
+
+									
+
+								</div>
+
+							</div>
+							<div class="row gutter-50">
+								<div class="col-xl-7 col-lg-5 mb-0 ">
+
+									<div class="masonry-thumbs grid-container grid-2" data-lightbox="gallery">
+										<a class="grid-item" href="slike/gusiceva/3.png" data-lightbox="gallery-item"><img src="slike/gusiceva/3.png" alt="Watch 1"></a>
+										<a class="grid-item" href="slike/gusiceva/4.png" data-lightbox="gallery-item"><img src="slike/gusiceva/4.png" alt="Watch 3"></a>
+										
+										 </div>
+
+								</div>
+
+								<div class="col-xl-5 col-lg-7 mb-0">
+
+
+									<div class="line line-sm"></div>
+
+									<div >
+
+										<h3>Jednoiposoban stan 38,91 m2</h3>
+
+										<!-- Product Single - Short Description
+										============================================= -->
+										<p>Prostrani Jednoiposobni stan od 38 kvadratna metra u Kragujevcu. Nalazi u blizini svih gradskih pogodnosti, što čini ovaj stan idealnim izborom za modernu i opuštenu urbano-ruralnu harmoniju.
+											</p>
+											
+									</div>
+
+									<!-- Product Single - Meta
+									============================================= -->
+									<div class="card product-meta mt-4 mb-5 rounded-0">
+										<div class="card-body">
+											<span itemprop="productID" class="sku_wrapper">Cena po m2: <span class="sku">1500€ + PDV</span></span>
+											</div>
+									</div><!-- Product Single - Meta End -->
+
+									
+
+								</div>
+
+							</div>
+							<div class="row gutter-50">
+								<div class="col-xl-7 col-lg-5 mb-0 ">
+
+									<div class="masonry-thumbs grid-container grid-2" data-lightbox="gallery">
+										<a class="grid-item" href="slike/gusiceva/5.png" data-lightbox="gallery-item"><img src="slike/gusiceva/5.png" alt="Watch 1"></a>
+										<a class="grid-item" href="slike/gusiceva/6.png" data-lightbox="gallery-item"><img src="slike/gusiceva/6.png" alt="Watch 3"></a>
+										
+										 </div>
+
+								</div>
+
+								<div class="col-xl-5 col-lg-7 mb-0">
+
+
+									<div class="line line-sm"></div>
+
+									<div >
+
+										<h3>Dvosoban stan 41,45 m2</h3>
+
+										<!-- Product Single - Short Description
+										============================================= -->
+										<p>Imperial agencija za nekretnine nudi šarmantan dvosoban stan od 50 kvadratnih metara.</p>
+											
+									</div>
+
+									<!-- Product Single - Meta
+									============================================= -->
+									<div class="card product-meta mt-4 mb-5 rounded-0">
+										<div class="card-body">
+											<span itemprop="productID" class="sku_wrapper">Cena po m2: <span class="sku">1500€ + PDV</span></span>
+											</div>
+									</div><!-- Product Single - Meta End -->
+
+									
+
+								</div>
+
+							</div>
+					
+							<div class="row gutter-50">
+								<div class="col-xl-7 col-lg-5 mb-0 ">
+
+									<div class="masonry-thumbs grid-container grid-2" data-lightbox="gallery">
+										<a class="grid-item" href="slike/gusiceva/7.png" data-lightbox="gallery-item"><img src="slike/gusiceva/7.png" alt="Watch 1"></a>
+										<a class="grid-item" href="slike/gusiceva/8.png" data-lightbox="gallery-item"><img src="slike/gusiceva/8.png" alt="Watch 3"></a>
+										
+										 </div>
+
+								</div>
+
+								<div class="col-xl-5 col-lg-7 mb-0">
+
+
+									<div class="line line-sm"></div>
+
+									<div >
+
+										<h3>Trosoban stan 85,51 m2</h3>
+
+										<!-- Product Single - Short Description
+										============================================= -->
+										<p>Imperial agencija za nekretnine nudi šarmantan dvosoban stan od 50 kvadratnih metara.</p>
+											
+									</div>
+
+									<!-- Product Single - Meta
+									============================================= -->
+									<div class="card product-meta mt-4 mb-5 rounded-0">
+										<div class="card-body">
+											<span itemprop="productID" class="sku_wrapper">Cena po m2: <span class="sku">1500€ + PDV</span></span>
+											</div>
+									</div><!-- Product Single - Meta End -->
+
+									
+
+								</div>
+
+							</div>
+						
+						</div>
+					</div>
+				</div>
+
+			 
+				
+
+			</div>
+		</section><!-- #content end -->
+
+		<!-- Footer
+		============================================= -->
+		<footer id="footer" class="bg-color dark border-0">
+
+			<div class="container-fluid">
+
+				<!-- Footer Widgets
+				============================================= -->
+				<div class="footer-widgets-wrap pb-5">
+
+					<div class="row">
+
+						<div class="col-lg-2 col-md-3 col-6">
+							<div class="widget">
+
+								<h4 class="ls0 mb-3 nott">Tesla Palace</h4>
+
+								<ul class="list-unstyled iconlist ms-0">
+									<li><a href="#">Ponuda stanova i lokala</a></li>
+									<li><a href="#">Prodajni Agent</a></li>
+									
+								</ul>
+
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-3 col-6">
+							<div class="widget">
+
+								<h4 class="ls0 mb-3 nott">Bosanska</h4>
+
+								<ul class="list-unstyled iconlist ms-0">
+									<li><a href="#">Ponuda stanova i lokala</a></li>
+									<li><a href="#">Prodajni Agent</a></li>
+								</ul>
+
+							</div>
+						</div>
+						 
+					
+
+					</div>
+
+				</div><!-- .footer-widgets-wrap end -->
+
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights">
+
+				<div class="container-fluid clearfix">
+
+					<div class="row justify-content-between align-items-center">
+						<div class="col-md-6">
+							Copyrights &copy; 2024 All Rights Reserved by Imperial Nekretnine<br>
+							<div class="copyright-links"><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></div>
+						</div>
+
+						<div class="col-md-6 d-md-flex flex-md-column align-items-md-end mt-4 mt-md-0">
+							<ul class="list-unstyled d-flex flex-row mb-2 clearfix">
+								
+							</ul>
+							<div class="copyrights-menu copyright-links clearfix">
+								<a href="#">Pocetna</a>/<a href="#">Novogradnja</a>/<a href="#">Pitanja i pomoc</a>/<a href="#">Kontakt</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- #copyrights end -->
+
+		</footer><!-- #footer end -->
+
+	</div><!-- #wrapper end -->
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="icon-angle-up"></div>
+
+	<!-- JavaScripts
+	============================================= -->
+	<script src="js/jquery.js"></script>
+	<script src="js/plugins.min.js"></script>
+
+	<!-- Footer Scripts
+	============================================= -->
+	<script src="js/functions.js"></script>
+
+	<script>
+		$(document).ready(changeHeaderColor);
+		$(window).on('resize',changeHeaderColor);
+
+		function changeHeaderColor(){
+			if (jQuery(window).width() > 991.98) {
+				jQuery( "#header" ).hover(
+					function() {
+						if (!$(this).hasClass("sticky-header")) {
+							$( this ).addClass( "hover-light" ).removeClass( "dark" );
+							SEMICOLON.header.logo();
+						}
+						$( "#wrapper" ).addClass( "header-overlay" );
+					}, function() {
+						if (!$(this).hasClass("sticky-header")) {
+							$( this ).removeClass( "hover-light" ).addClass( "dark" );
+							SEMICOLON.header.logo();
+						}
+						$( "#wrapper" ).removeClass( "header-overlay" );
+					}
+				);
+			}
+		};
+
+		$(window).scroll(function() {
+			if ($(document).scrollTop() > 2000 && $("#modal-subscribe").attr("displayed") === "false") {
+				$('#modal-subscribe').modal('show');
+				$("#modal-subscribe").attr("displayed", "true");
+			}
+		});
+
+		jQuery('#modal-subscribe-form').on( 'formSubmitSuccess', function(){
+			$("#modal-subscribe").addClass("fadeOutDown");
+			setTimeout(function() { $('#modal-subscribe').modal('hide'); }, 400);
+			$("#modal-subscribe").attr("displayed", "false");
+		});
+
+
+	</script>
+
+</body>
+</html>
